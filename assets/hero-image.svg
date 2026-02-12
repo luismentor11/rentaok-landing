@@ -1,0 +1,8 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F1F5F9"/>
+  <rect x="100" y="150" width="600" height="300" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <circle cx="400" cy="250" r="50" fill="#E0F2FE"/>
+  <path d="M 375 250 L 395 270 L 430 235" stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="350" font-family="Inter, Arial" font-size="24" fill="#0F172A" text-anchor="middle" font-weight="600">Gestión Ordenada de Alquileres</text>
+  <text x="400" y="385" font-family="Inter, Arial" font-size="16" fill="#64748B" text-anchor="middle">Panel operativo RentaOK</text>
+</svg>

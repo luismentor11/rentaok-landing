@@ -1,0 +1,10 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- House icon -->
+  <path d="M10 24L18 16L26 24V38C26 38.5304 25.7893 39.0391 25.4142 39.4142C25.0391 39.7893 24.5304 40 24 40H12C11.4696 40 10.9609 39.7893 10.5858 39.4142C10.2107 39.0391 10 38.5304 10 38V24Z" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 40V28H20V40" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Checkmark -->
+  <path d="M22 24L26 28L32 22" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Text "RentaOK" -->
+  <text x="40" y="29" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#2563EB">Renta</text>
+  <text x="105" y="29" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#10B981">OK</text>
+</svg>

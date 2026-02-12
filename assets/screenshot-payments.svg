@@ -1,0 +1,81 @@
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#0F172A"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="70" fill="#1E293B"/>
+  <text x="30" y="45" font-family="Inter, Arial" font-size="24" fill="#FFFFFF" font-weight="700">Pagos</text>
+  
+  <!-- Subtitle -->
+  <text x="50" y="120" font-family="Inter, Arial" font-size="16" fill="#94A3B8">Movimientos registrados en Canon/Mes.</text>
+  
+  <!-- Filters -->
+  <rect x="50" y="150" width="250" height="45" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+  <text x="70" y="178" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">febrero de 2026</text>
+  
+  <rect x="320" y="150" width="120" height="45" rx="6" fill="#374151"/>
+  <text x="380" y="178" font-family="Inter, Arial" font-size="14" fill="#FFFFFF" text-anchor="middle">Todos</text>
+  
+  <!-- Table header -->
+  <text x="50" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">FECHA</text>
+  <text x="250" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">CONTRATO</text>
+  <text x="600" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">PERIODO</text>
+  <text x="750" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">MÉTODO</text>
+  <text x="900" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">MONTO</text>
+  <text x="1100" y="240" font-family="Inter, Arial" font-size="12" fill="#64748B" font-weight="600">RECIBO</text>
+  
+  <!-- Payment row 1 -->
+  <rect x="30" y="260" width="1340" height="90" rx="8" fill="#1E293B"/>
+  <text x="50" y="295" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">04-02-2026,</text>
+  <text x="50" y="315" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">9:42:00 p.m.</text>
+  
+  <text x="250" y="285" font-family="Inter, Arial" font-size="14" fill="#FFFFFF" font-weight="600">Street Local 20</text>
+  <text x="250" y="305" font-family="Inter, Arial" font-size="12" fill="#64748B">Av. San Martín N.º 712</text>
+  <text x="250" y="320" font-family="Inter, Arial" font-size="12" fill="#64748B">Alexander Rodrigo Videla</text>
+  
+  <text x="600" y="300" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">2025-11</text>
+  
+  <text x="750" y="300" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">EFECTIVO</text>
+  
+  <rect x="890" y="280" width="140" height="35" rx="6" fill="#10B981" fill-opacity="0.2"/>
+  <circle cx="910" cy="297" r="8" fill="#10B981"/>
+  <path d="M 907 297 L 910 300 L 914 294" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <text x="925" y="302" font-family="Inter, Arial" font-size="14" fill="#10B981" font-weight="600">$ 500,000</text>
+  
+  <rect x="1100" y="280" width="90" height="30" rx="4" fill="#3B82F6"/>
+  <text x="1145" y="301" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Descargar</text>
+  
+  <rect x="1205" y="280" width="70" height="30" rx="4" fill="#8B5CF6"/>
+  <text x="1240" y="301" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Email</text>
+  
+  <rect x="1285" y="280" width="70" height="30" rx="4" fill="#10B981"/>
+  <text x="1320" y="301" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">WhatsApp</text>
+  
+  <!-- Payment row 2 -->
+  <rect x="30" y="370" width="1340" height="90" rx="8" fill="#1E293B"/>
+  <text x="50" y="405" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">04-02-2026,</text>
+  <text x="50" y="425" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">7:27:00 p.m.</text>
+  
+  <text x="250" y="395" font-family="Inter, Arial" font-size="14" fill="#FFFFFF" font-weight="600">Street Local 20</text>
+  <text x="250" y="415" font-family="Inter, Arial" font-size="12" fill="#64748B">Av. San Martín N.º 712</text>
+  <text x="250" y="430" font-family="Inter, Arial" font-size="12" fill="#64748B">Alexander Rodrigo Videla</text>
+  
+  <text x="600" y="410" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">2025-10</text>
+  
+  <text x="750" y="410" font-family="Inter, Arial" font-size="14" fill="#FFFFFF">EFECTIVO</text>
+  
+  <rect x="890" y="390" width="140" height="35" rx="6" fill="#10B981" fill-opacity="0.2"/>
+  <circle cx="910" cy="407" r="8" fill="#10B981"/>
+  <path d="M 907 407 L 910 410 L 914 404" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <text x="925" y="412" font-family="Inter, Arial" font-size="14" fill="#10B981" font-weight="600">$ 470,000</text>
+  
+  <rect x="1100" y="390" width="90" height="30" rx="4" fill="#3B82F6"/>
+  <text x="1145" y="411" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Descargar</text>
+  
+  <rect x="1205" y="390" width="70" height="30" rx="4" fill="#8B5CF6"/>
+  <text x="1240" y="411" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Email</text>
+  
+  <rect x="1285" y="390" width="70" height="30" rx="4" fill="#10B981"/>
+  <text x="1320" y="411" font-family="Inter, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">WhatsApp</text>
+  
+  <!-- Footer -->
+  <text x="50" y="500" font-family="Inter, Arial" font-size="14" fill="#64748B">Mostrando 2 resultados.</text>
+</svg>

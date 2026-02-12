@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentaOK - Ordená tus alquileres. Evitá olvidos. Registrá todo.</title>
+    <title>RentaOK - Sistema de Gestión del Ciclo Mensual del Alquiler</title>
     <meta name="description"
-        content="RentaOK organiza el ciclo mensual del alquiler: notificaciones, pagos y seguimiento en un solo lugar. Sin planillas, sin mensajes perdidos, sin discusiones.">
+        content="RentaOK ordena el ciclo mensual del alquiler. Sistema digital que organiza información, automatiza notificaciones y registra pagos con trazabilidad clara.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- Navegación Simple -->
+    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -23,280 +23,316 @@
                     <img src="assets/logo-rentaok.png" alt="RentaOK Logo" style="height: 140px;">
                 </div>
                 <div class="nav-links">
-                    <a href="#perfiles">Para quién es</a>
+                    <a href="#problema">Problema</a>
                     <a href="#funcionalidades">Qué hace</a>
-                    <a href="#roi">Beneficios</a>
-                    <a href="#cta-final" class="btn-nav">Probar RentaOK</a>
+                    <a href="#precios">Precios</a>
+                    <a href="#precios" class="btn-nav">Probar RentaOK</a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Menú">
+                <div class="menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
-                </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- HERO — Impacto Inmediato -->
-    <section id="hero" class="hero">
+    <!-- HERO SECTION -->
+    <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Ordená tus alquileres.<br>
-                        Evitá olvidos.<br>
-                        Registrá todo.
-                    </h1>
-                    <p class="hero-subtitle">
-                        RentaOK organiza el ciclo mensual del alquiler: notificaciones, pagos y seguimiento en un solo
-                        lugar.
-                    </p>
-                    <p class="hero-description">
-                        Sin planillas, sin mensajes perdidos, sin discusiones.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#cta-final" class="btn btn-primary btn-large">👉 Probar RentaOK</a>
-                    </div>
-                    <p class="hero-trust">
-                        En minutos tenés todo funcionando.
-                    </p>
+                <h1>Ordená tus alquileres.<br>Evitá olvidos.<br>Registrá todo.</h1>
+                <p class="hero-subtitle">RentaOK organiza el ciclo mensual del alquiler: notificaciones, pagos y
+                    seguimiento en un solo lugar. <strong>Sin planillas, sin mensajes perdidos, sin
+                        discusiones.</strong></p>
+                <div class="hero-cta">
+                    <a href="#precios" class="btn-primary">👉 Probar RentaOK</a>
+                    <p class="hero-support">En minutos tenés todo funcionando.</p>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="assets/rok-hero2.png" alt="RentaOK - Gestión ordenada de alquileres">
-                    </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/rok-hero2.png" alt="RentaOK Dashboard">
                 </div>
             </div>
         </div>
-        <div class="hero-background"></div>
-    </section>
+    </header>
 
-    <!-- PROBLEMA — Conectar con la Realidad -->
-    <section id="problema" class="problem-section">
+    <!-- PROBLEMA SECTION -->
+    <section id="problema" class="section-light">
         <div class="container">
-            <div class="section-header centered">
+            <div class="section-header center">
                 <h2>El desorden mensual genera fricción innecesaria</h2>
+                <p class="section-lead">Recordar vencimientos, confirmar pagos, buscar comprobantes y coordinar mensajes
+                    parece manejable… hasta que algo falla.</p>
             </div>
-            <div class="problem-content">
-                <p class="problem-intro">
-                    Recordar vencimientos, confirmar pagos, buscar comprobantes y coordinar mensajes parece
-                    manejable… hasta que algo falla.
-                </p>
-                <div class="problem-consequences">
-                    <p class="problem-lead">Cuando el seguimiento depende de memoria o chats informales:</p>
-                    <ul class="problem-list">
-                        <li>se pierden registros</li>
-                        <li>aparecen malentendidos</li>
-                        <li>crece el desgaste</li>
+            <div class="problem-grid">
+                <div class="problem-text">
+                    <p>Cuando el seguimiento depende de memoria o chats informales:</p>
+                    <ul class="pain-points">
+                        <li>❌ Se pierden registros importantes</li>
+                        <li>❌ Aparecen malentendidos con inquilinos</li>
+                        <li>❌ Crece el desgaste operativo diario</li>
                     </ul>
-                </div>
-                <p class="problem-solution">
-                    <strong>RentaOK convierte ese caos en un flujo claro, automático y documentado.</strong>
-                </p>
-            </div>
-            <div class="problem-visual">
-                <img src="assets/problem-dashboard.jpg" alt="Del caos al orden con RentaOK">
-            </div>
-        </div>
-    </section>
-
-    <!-- PARA QUIÉN ES — Reflejo del Usuario -->
-    <section id="perfiles" class="profiles-section">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-badge">Para quién es</span>
-            </div>
-            <div class="profiles-grid">
-                <!-- Propietarios -->
-                <div class="profile-card">
-                    <div class="profile-header">
-                        <div class="profile-icon">🏠</div>
-                        <h3>Si sos propietario</h3>
+                    <div class="solution-highlight">
+                        <p><strong>RentaOK convierte ese caos en un flujo claro, automático y documentado.</strong></p>
                     </div>
-                    <p class="profile-description">
-                        Controlás tu alquiler sin perseguir pagos ni ordenar mensajes.
-                    </p>
-                    <ul class="profile-benefits">
-                        <li>Avisos automáticos</li>
-                        <li>Registro inmediato</li>
-                        <li>Historial mensual claro</li>
-                    </ul>
-                    <p class="profile-result">
-                        👉 <strong>Resultado:</strong> menos estrés, más control.
-                    </p>
                 </div>
-
-                <!-- Inmobiliarias/Gestores -->
-                <div class="profile-card">
-                    <div class="profile-header">
-                        <div class="profile-icon">🏢</div>
-                        <h3>Si sos inmobiliaria o gestor</h3>
-                    </div>
-                    <p class="profile-description">
-                        Escalás contratos sin aumentar carga administrativa.
-                    </p>
-                    <ul class="profile-benefits">
-                        <li>Gestión centralizada</li>
-                        <li>Notificaciones automáticas</li>
-                        <li>Trazabilidad total</li>
-                    </ul>
-                    <p class="profile-result">
-                        👉 <strong>Resultado:</strong> más eficiencia, menos fricción operativa.
-                    </p>
+                <div class="problem-image">
+                    <img src="assets/problem-dashboard.jpg" alt="Caos administrativo vs Orden RentaOK">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- QUÉ HACE — Solución Concreta -->
-    <section id="funcionalidades" class="features-section">
+    <!-- PARA QUIÉN ES -->
+    <section id="perfiles" class="section-white">
         <div class="container">
-            <div class="section-header centered">
+            <div class="perfiles-grid">
+                <!-- Propietario -->
+                <div class="perfil-card">
+                    <div class="icon-wrap">🏠</div>
+                    <h3>Si sos Propietario</h3>
+                    <p>Controlás tu alquiler sin perseguir pagos ni ordenar mensajes.</p>
+                    <ul class="benefits-list">
+                        <li>✅ Avisos automáticos</li>
+                        <li>✅ Registro inmediato</li>
+                        <li>✅ Historial mensual claro</li>
+                    </ul>
+                    <div class="result-box">
+                        <p><strong>Resultado:</strong> menos estrés, más control.</p>
+                    </div>
+                </div>
+                <!-- Inmobiliaria -->
+                <div class="perfil-card">
+                    <div class="icon-wrap">🏢</div>
+                    <h3>Si sos Inmobiliaria o Gestor</h3>
+                    <p>Escalás contratos sin aumentar carga administrativa.</p>
+                    <ul class="benefits-list">
+                        <li>✅ Gestión centralizada</li>
+                        <li>✅ Notificaciones automáticas</li>
+                        <li>✅ Trazabilidad total</li>
+                    </ul>
+                    <div class="result-box">
+                        <p><strong>Resultado:</strong> más eficiencia, menos fricción operativa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ HACE -->
+    <section id="funcionalidades" class="section-light">
+        <div class="container">
+            <div class="section-header center">
                 <h2>Un sistema simple que gestiona el mes de alquiler</h2>
                 <p>RentaOK automatiza lo que hoy hacés manualmente:</p>
             </div>
-            <div class="features-list">
-                <div class="feature-item-simple">
-                    <div class="feature-check-large">✔</div>
-                    <h4>Gestión de contratos</h4>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="check-icon">✔</span>
+                    <h3>Gestión de contratos</h3>
                 </div>
-                <div class="feature-item-simple">
-                    <div class="feature-check-large">✔</div>
-                    <h4>Administración de cuotas</h4>
+                <div class="feature-item">
+                    <span class="check-icon">✔</span>
+                    <h3>Administración de cuotas</h3>
                 </div>
-                <div class="feature-item-simple">
-                    <div class="feature-check-large">✔</div>
-                    <h4>Notificaciones programadas</h4>
+                <div class="feature-item">
+                    <span class="check-icon">✔</span>
+                    <h3>Notificaciones programadas</h3>
                 </div>
-                <div class="feature-item-simple">
-                    <div class="feature-check-large">✔</div>
-                    <h4>Registro de pagos</h4>
+                <div class="feature-item">
+                    <span class="check-icon">✔</span>
+                    <h3>Registro de pagos</h3>
                 </div>
-                <div class="feature-item-simple">
-                    <div class="feature-check-large">✔</div>
-                    <h4>Historial ordenado</h4>
+                <div class="feature-item">
+                    <span class="check-icon">✔</span>
+                    <h3>Historial ordenado</h3>
                 </div>
             </div>
-            <p class="features-tagline">
-                Todo visible. Todo documentado. Todo predecible.
+            <div class="features-closing">
+                <p>Todo visible. Todo documentado. Todo predecible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI -->
+    <section class="section-roi section-dark">
+        <div class="container">
+            <div class="roi-content center">
+                <h2>Tiempo que recuperás cada mes</h2>
+                <p>Cada alquiler gestionado manualmente consume minutos que se repiten todos los meses. Multiplicá
+                    seguimiento + mensajes + organización.</p>
+                <div class="roi-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">Menos tiempo operativo</span>
+                    </div>
+                </div>
+                <p class="roi-result"><strong>RentaOK automatiza ese ciclo.</strong> Eliminación de seguimientos
+                    repetitivos, menos errores y reprocesos.</p>
+                <p class="roi-final">👉 Resultado: más tiempo para gestionar, no para apagar incendios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="section-white">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Planes según volumen de gestión</h2>
+                <p>Valores orientativos. Activación por consulta.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan Propietario -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Plan Propietario</h3>
+                        <p class="contracts">1–5 contratos</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">30.000</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Gestión básica</li>
+                        <li>Reportes mensuales</li>
+                        <li>Asistencia IA diaria</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://wa.me/5492612377430?text=Hola,%20quiero%20consultar%20por%20el%20Plan%20Propietario"
+                            class="btn-outline" target="_blank">Consultar activación</a>
+                    </div>
+                </div>
+
+                <!-- Plan Gestor (Destacado) -->
+                <div class="pricing-card featured">
+                    <div class="popular-tag">Más Popular</div>
+                    <div class="plan-header">
+                        <h3>Plan Gestor</h3>
+                        <p class="contracts">6–10 contratos</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">35.000</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><strong>Multi-contrato</strong></li>
+                        <li>Reportes operativos</li>
+                        <li>IA optimización</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://wa.me/5492612377430?text=Hola,%20quiero%20consultar%20por%20el%20Plan%20Gestor"
+                            class="btn-primary block" target="_blank">Consultar activación</a>
+                    </div>
+                </div>
+
+                <!-- Plan Profesional -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Plan Profesional</h3>
+                        <p class="contracts">11–20 contratos</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">40.000</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Reportes avanzados</li>
+                        <li>Gestión ampliada</li>
+                        <li>IA extendida</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://wa.me/5492612377430?text=Hola,%20quiero%20consultar%20por%20el%20Plan%20Profesional"
+                            class="btn-outline" target="_blank">Consultar activación</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-footer center">
+                <p>Más de 20 contratos: <a href="https://wa.me/5492612377430" target="_blank">consultar promociones
+                        vigentes</a>.</p>
+                <div class="promo-box">
+                    <span class="promo-icon">🎁</span> <strong>Promoción:</strong> Plan anual con <strong>40% de
+                        descuento</strong> por tiempo limitado.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECIONES -->
+    <section id="faq" class="section-light">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Dudas comunes</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>“Ya uso planillas y WhatsApp”</h4>
+                    <p>Funciona… hasta que algo se pierde. Acá todo queda registrado y organizado automáticamente.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>“Debe ser complejo”</h4>
+                    <p>Se usa en minutos. Sin capacitación técnica. Interfaz intuitiva.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>“Tengo pocos contratos”</h4>
+                    <p>Es el mejor momento. Conviene crear orden y buenos procesos desde el inicio.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>“No quiero cambiar mi sistema”</h4>
+                    <p>No reemplaza lo legal. Organiza el seguimiento mensual y la comunicación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFIANZA -->
+    <section class="section-trust">
+        <div class="container center">
+            <p class="disclaimer">
+                <small><strong>Nota importante:</strong> RentaOK no reemplaza contratos ni asesoramiento legal. Ordena y
+                    automatiza la comunicación y el seguimiento pactado.</small>
             </p>
         </div>
     </section>
 
-    <!-- ROI — Ahorro Real -->
-    <section id="roi" class="roi-section">
-        <div class="container">
-            <div class="roi-content">
-                <div class="roi-text">
-                    <h2>Tiempo que recuperás cada mes</h2>
-                    <p class="roi-description">
-                        Cada alquiler gestionado manualmente consume minutos que se repiten todos los meses.
-                    </p>
-                    <p class="roi-calculation">
-                        Multiplicá seguimiento + mensajes + organización.
-                    </p>
-                    <p class="roi-solution">
-                        <strong>RentaOK automatiza ese ciclo.</strong>
-                    </p>
-                    <div class="roi-benefits">
-                        <div class="roi-benefit">
-                            <div class="roi-icon">✔</div>
-                            <p>Hasta <strong>70% menos tiempo operativo</strong></p>
-                        </div>
-                        <div class="roi-benefit">
-                            <div class="roi-icon">✔</div>
-                            <p>Eliminación de seguimientos repetitivos</p>
-                        </div>
-                        <div class="roi-benefit">
-                            <div class="roi-icon">✔</div>
-                            <p>Menos errores y reprocesos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="roi-highlight">
-                    <div class="roi-stat">
-                        <div class="roi-number">70%</div>
-                        <div class="roi-label">Menos tiempo<br>operativo</div>
-                    </div>
-                    <p class="roi-result">
-                        👉 <strong>Resultado:</strong> más tiempo para gestionar, no para apagar incendios.
-                    </p>
+    <!-- FINAL CTA -->
+    <section class="section-final-cta">
+        <div class="container center">
+            <h2>Gestioná alquileres con claridad desde hoy</h2>
+            <p>Menos olvidos. Menos fricción. Más control.</p>
+            <div class="cta-actions">
+                <a href="#precios" class="btn-primary large">Consultar activación</a>
+                <div class="contact-buttons-footer">
+                    <a href="https://wa.me/5492612377430" class="whatsapp-link" target="_blank">🇦🇷 Mendoza,
+                        Argentina</a>
+                    <a href="https://wa.me/595976750915" class="whatsapp-link" target="_blank">🇵🇾 Asunción,
+                        Paraguay</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OBJECIONES — Eliminar Fricción Mental -->
-    <section id="objeciones" class="objections-section">
+    <!-- FOOTER -->
+    <footer>
         <div class="container">
-            <div class="section-header centered">
-                <h2>Dudas comunes</h2>
-            </div>
-            <div class="objections-grid">
-                <div class="objection-card">
-                    <h4>"Ya uso planillas y WhatsApp."</h4>
-                    <p>Funciona… hasta que algo se pierde. Acá todo queda registrado.</p>
-                </div>
-                <div class="objection-card">
-                    <h4>"Debe ser complejo."</h4>
-                    <p>Se usa en minutos. Sin capacitación técnica.</p>
-                </div>
-                <div class="objection-card">
-                    <h4>"Tengo pocos contratos."</h4>
-                    <p>Es cuando más conviene crear orden desde el inicio.</p>
-                </div>
-                <div class="objection-card">
-                    <h4>"No quiero cambiar mi sistema."</h4>
-                    <p>No reemplaza lo legal. Organiza el seguimiento mensual.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONFIANZA — Aclaración -->
-    <section class="trust-section">
-        <div class="container">
-            <div class="trust-card">
-                <p class="trust-message">
-                    <strong>RentaOK no reemplaza contratos ni asesoramiento legal.</strong><br>
-                    Ordena y automatiza la comunicación y el seguimiento pactado.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CIERRE — CTA Fuerte -->
-    <section id="cta-final" class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Gestioná alquileres con claridad desde hoy</h2>
-                <p class="cta-tagline">Menos olvidos. Menos fricción. Más control.</p>
-                <div class="cta-buttons">
-                    <a href="mailto:contacto@rentaok.lat" class="btn btn-primary btn-large">👉 Probar RentaOK
-                        ahora</a>
-                </div>
-                <p class="cta-note">Nos contactaremos a la brevedad para brindarte acceso.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Minimalista -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content-simple">
+            <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/logo-rentaok.png" alt="RentaOK Logo" style="height: 65px; margin-bottom: 0.5rem;">
+                    <img src="assets/logo-rentaok.png" alt="RentaOK Logo" style="height: 50px; margin-bottom: 0.5rem;">
                     <p>Sistema de gestión del ciclo mensual del alquiler</p>
                 </div>
-                <div class="footer-contact">
-                    <p><strong>📧</strong> <a href="mailto:contacto@rentaok.lat">contacto@rentaok.lat</a></p>
-                    <p><strong>📍</strong> Mendoza, Argentina</p>
+                <div class="footer-links">
+                    <a href="mailto:contacto@rentaok.lat">contacto@rentaok.lat</a>
+                    <span>Mendoza, Argentina</span>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 RentaOK by Mentora. Todos los derechos reservados. | Mendoza, Argentina</p>
-                <p class="footer-disclaimer">RentaOK es una herramienta de gestión administrativa. No realiza cobranzas
-                    legales ni garantiza el pago.</p>
+                <p>&copy; 2024 RentaOK. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

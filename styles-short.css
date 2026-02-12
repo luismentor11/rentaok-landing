@@ -1,6 +1,6 @@
 /* ========================================
    STYLES PARA LANDING CORTA (ADS)
-   Versión minimalista y optimizada
+   Versión High-Impact & Conversion Focused
    ======================================== */
 
 * {
@@ -11,183 +11,276 @@
 
 :root {
     --color-primary: #2563EB;
+    --color-primary-dark: #1E40AF;
     --color-secondary: #10B981;
+    --color-secondary-dark: #059669;
+    --color-whatsapp: #25D366;
+    --color-whatsapp-dark: #128C7E;
     --color-dark: #0F172A;
-    --color-gray: #64748B;
+    --color-gray: #475569;
+    --color-light: #F8FAFC;
     --color-white: #FFFFFF;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--color-dark);
-    line-height: 1.6;
+    line-height: 1.5;
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
 }
 
 .container-compact {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
-/* HERO COMPACTO */
+/* HERO SECTION */
 .hero-compact {
-    background: linear-gradient(135deg, #F8FAFC 0%, #E0F2FE 100%);
+    background: linear-gradient(180deg, #F0F9FF 0%, #E0F2FE 100%);
     text-align: center;
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem 5rem;
+    border-bottom: 1px solid #BAE6FD;
 }
 
 .logo-compact {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
 }
 
+.logo-compact img {
+    max-width: 100%;
+    height: auto;
+}
+
 .hero-compact h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--color-dark);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--color-gray);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
 }
 
+/* CTA BUTTONS */
 .cta-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: var(--color-primary);
     color: var(--color-white);
-    padding: 1rem 2.5rem;
-    font-size: 1.125rem;
+    padding: 1.25rem 3rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-btn:hover {
-    background: #1E40AF;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    background: var(--color-primary-dark);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(37, 99, 235, 0.4);
 }
 
-/* BENEFICIOS COMPACTOS */
+/* BENEFICIOS */
 .benefits-compact {
     background: var(--color-white);
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
 }
 
 .benefits-compact .container-compact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .benefit-card {
-    background: #F1F5F9;
-    padding: 2rem 1.5rem;
-    border-radius: 0.75rem;
+    background: var(--color-white);
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
     text-align: center;
-    border-top: 4px solid var(--color-primary);
+    border: 1px solid #E2E8F0;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
 }
 
 .benefit-card h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 800;
     color: var(--color-dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .benefit-card p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: var(--color-gray);
+    font-weight: 500;
 }
 
-/* RESULTADOS COMPACTOS */
+/* RESULTADOS */
 .results-compact {
     background: var(--color-dark);
     color: var(--color-white);
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
     text-align: center;
+    position: relative;
+}
+
+.results-content {
+    position: relative;
+    z-index: 1;
 }
 
 .result-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    font-size: 1.25rem;
+    gap: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .check {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: var(--color-secondary);
     color: var(--color-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.125rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 800;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
 .results-compact .cta-btn {
-    margin-top: 1rem;
-}
-
-/* CIERRE COMPACTO */
-.close-compact {
-    background: linear-gradient(135deg, #1E293B, #0F172A);
-    color: var(--color-white);
-    padding: 3rem 1.5rem;
-    text-align: center;
-}
-
-.close-compact p:first-child {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    line-height: 1.4;
-}
-
-.cta-btn-final {
-    display: inline-block;
+    margin-top: 2rem;
     background: var(--color-secondary);
-    color: var(--color-white);
-    padding: 1rem 2.5rem;
-    font-size: 1.125rem;
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
+}
+
+.results-compact .cta-btn:hover {
+    background: var(--color-secondary-dark);
+    box-shadow: 0 12px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* CIERRE & CONTACTO */
+.close-compact {
+    background: #F8FAFC;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid #E2E8F0;
+}
+
+.close-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--color-dark);
+}
+
+/* WHATSAPP BUTTONS - FIXED */
+.contact-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+    .contact-options-container {
+        flex-direction: row;
+    }
+}
+
+.whatsapp-btn {
+    display: inline-flex !important;
+    /* Force display */
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.125rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-whatsapp) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 280px;
+    justify-content: center;
+    line-height: 1.2;
 }
 
-.cta-btn-final:hover {
-    background: #059669;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(37, 211, 102, 0.3);
+    background-color: var(--color-whatsapp-dark) !important;
+}
+
+.flag {
+    font-size: 1.75rem;
+    line-height: 1;
 }
 
 .footer-compact {
-    font-size: 0.875rem;
-    color: #94A3B8;
-    margin-top: 2rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    color: #64748B;
+    margin-top: 3rem;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+    display: inline-block;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE TYPE */
 @media (max-width: 768px) {
     .hero-compact h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
     }
 
     .benefits-compact .container-compact {
@@ -195,10 +288,60 @@ body {
     }
 
     .result-item {
-        font-size: 1.125rem;
+        text-align: left;
+        justify-content: flex-start;
     }
+}
+/* Contact Options for Multi-Country */
+.contact-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
 
-    .close-compact p:first-child {
-        font-size: 1.25rem;
+@media (min-width: 640px) {
+    .contact-options-container {
+        flex-direction: row;
     }
+}
+
+.whatsapp-btn {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #25D366 !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 250px;
+    justify-content: flex-start;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+    background: #20BD5A !important;
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    /* Make white */
+    margin-right: 0.25rem;
+}
+
+.flag {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+    line-height: 1;
 }

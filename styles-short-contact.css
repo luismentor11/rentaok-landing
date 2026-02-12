@@ -1,0 +1,53 @@
+/* Contact Options for Multi-Country */
+.contact-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+    .contact-options-container {
+        flex-direction: row;
+    }
+}
+
+.whatsapp-btn {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #25D366 !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 250px;
+    justify-content: flex-start;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+    background: #20BD5A !important;
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    /* Make white */
+    margin-right: 0.25rem;
+}
+
+.flag {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+    line-height: 1;
+}

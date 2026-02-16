@@ -1,47 +1,47 @@
 // Smooth scroll and interactions
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuBtn = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.addEventListener('click', function () {
             navLinks.classList.toggle('active');
-            this.classList.toggle('active');
+            this.classList.toggle('active'); // Animate hamburger
         });
     }
-    
+
     // Close mobile menu when clicking nav links
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             navLinks.classList.remove('active');
             if (mobileMenuBtn) {
                 mobileMenuBtn.classList.remove('active');
             }
         });
     });
-    
+
     // Form submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
+
             console.log('Form submitted:', data);
-            
+
             // Show success message
             const btn = this.querySelector('.btn-primary');
             const originalText = btn.textContent;
             btn.textContent = '✓ ¡Gracias! Te contactaremos pronto';
             btn.style.background = '#10B981';
-            
+
             // Reset form
             this.reset();
-            
+
             // Reset button after 3 seconds
             setTimeout(() => {
                 btn.textContent = originalText;
@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 3000);
         });
     }
-    
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver(function(entries) {
+
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('fade-in-up');
@@ -64,21 +64,42 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, observerOptions);
-    
+
     // Observe sections
     document.querySelectorAll('.problem-card, .capability-card, .step, .benefit-item').forEach(el => {
         observer.observe(el);
     });
-    
+
     // Navbar background on scroll
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Background change
+        if (scrollTop > 50) {
             navbar.style.background = 'rgba(255, 255, 255, 0.98)';
             navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
         } else {
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             navbar.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
         }
+
+        // Smart Hide/Show
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling DOWN
+            navbar.classList.add('navbar-hidden');
+            // Close mobile menu if open
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+            }
+        } else {
+            // Scrolling UP
+            navbar.classList.remove('navbar-hidden');
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
 });
